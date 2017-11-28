@@ -95,5 +95,26 @@ namespace oversurgeryproject
 
             }
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            main mm = new main();
+            mm.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 mm = new Form1();
+            mm.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Appointment mm = new Appointment();
+            mm.Show();
+        }
     }
 }
