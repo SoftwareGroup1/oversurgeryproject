@@ -36,28 +36,31 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtname = new System.Windows.Forms.TextBox();
+            this.patientBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.oversugeryDBDataSet = new oversurgeryproject.OversugeryDBDataSet();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.txtnumber = new System.Windows.Forms.TextBox();
             this.txtadress = new System.Windows.Forms.TextBox();
             this.txtdob = new System.Windows.Forms.TextBox();
             this.txtgender = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.genderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dOBDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.patientBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.oversugeryDBDataSet = new oversurgeryproject.OversugeryDBDataSet();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.patientTableAdapter = new oversurgeryproject.OversugeryDBDataSetTableAdapters.patientTableAdapter();
             this.oversugeryDBDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.patientBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.oversugeryDBDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.oversugeryDBDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -131,6 +134,16 @@
             this.txtname.Size = new System.Drawing.Size(203, 32);
             this.txtname.TabIndex = 0;
             // 
+            // patientBindingSource
+            // 
+            this.patientBindingSource.DataMember = "patient";
+            this.patientBindingSource.DataSource = this.oversugeryDBDataSet;
+            // 
+            // oversugeryDBDataSet
+            // 
+            this.oversugeryDBDataSet.DataSetName = "OversugeryDBDataSet";
+            this.oversugeryDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F);
@@ -182,6 +195,7 @@
             this.dataGridView1.AllowDrop = true;
             this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nameDataGridViewTextBoxColumn,
@@ -196,47 +210,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(838, 229);
             this.dataGridView1.TabIndex = 16;
             this.dataGridView1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.dataGridView1_KeyPress);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(460, 99);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(113, 56);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Edit ";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.AllowDrop = true;
-            this.button3.Location = new System.Drawing.Point(460, 172);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(113, 56);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "Save";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(341, 172);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(113, 56);
-            this.button4.TabIndex = 8;
-            this.button4.Text = "Cancel";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(341, 99);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 56);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "New";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // nameDataGridViewTextBoxColumn
             // 
@@ -268,15 +241,50 @@
             this.numberDataGridViewTextBoxColumn.HeaderText = "Number ";
             this.numberDataGridViewTextBoxColumn.Name = "numberDataGridViewTextBoxColumn";
             // 
-            // patientBindingSource
+            // button2
             // 
-            this.patientBindingSource.DataMember = "patient";
-            this.patientBindingSource.DataSource = this.oversugeryDBDataSet;
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.button2.Location = new System.Drawing.Point(460, 99);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(113, 56);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Edit ";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // oversugeryDBDataSet
+            // button3
             // 
-            this.oversugeryDBDataSet.DataSetName = "OversugeryDBDataSet";
-            this.oversugeryDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.button3.AllowDrop = true;
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.button3.Location = new System.Drawing.Point(460, 172);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(113, 56);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "Save";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.button4.Location = new System.Drawing.Point(341, 172);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(113, 56);
+            this.button4.TabIndex = 8;
+            this.button4.Text = "Cancel";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.button1.Location = new System.Drawing.Point(341, 99);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(113, 56);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "New";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // patientTableAdapter
             // 
@@ -287,11 +295,47 @@
             this.oversugeryDBDataSetBindingSource.DataSource = this.oversugeryDBDataSet;
             this.oversugeryDBDataSetBindingSource.Position = 0;
             // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.button5.Location = new System.Drawing.Point(633, 8);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(112, 41);
+            this.button5.TabIndex = 17;
+            this.button5.Text = "Back";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.button6.Location = new System.Drawing.Point(755, 8);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(112, 41);
+            this.button6.TabIndex = 18;
+            this.button6.Text = "Log off ";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(618, 99);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(127, 65);
+            this.button7.TabIndex = 19;
+            this.button7.Text = "Appointment ";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // patient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(879, 562);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -312,9 +356,9 @@
             this.Name = "patient";
             this.Text = "5";
             this.Load += new System.EventHandler(this.patient_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.patientBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.oversugeryDBDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.oversugeryDBDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -349,5 +393,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dOBDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn numberDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
     }
 }

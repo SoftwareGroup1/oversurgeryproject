@@ -38,29 +38,31 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button1.Location = new System.Drawing.Point(276, 286);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(230, 115);
             this.button1.TabIndex = 0;
             this.button1.Text = "Exit ";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button2.Location = new System.Drawing.Point(581, 286);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(230, 115);
             this.button2.TabIndex = 1;
             this.button2.Text = "Login";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.8F);
-            this.label1.Location = new System.Drawing.Point(257, 97);
+            this.label1.Location = new System.Drawing.Point(254, 105);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(252, 54);
             this.label1.TabIndex = 2;
@@ -71,7 +73,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.8F);
-            this.label2.Location = new System.Drawing.Point(267, 187);
+            this.label2.Location = new System.Drawing.Point(254, 181);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(242, 54);
             this.label2.TabIndex = 3;
@@ -80,7 +82,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.8F);
-            this.textBox1.Location = new System.Drawing.Point(581, 102);
+            this.textBox1.Location = new System.Drawing.Point(581, 105);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(230, 49);
@@ -100,6 +102,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(855, 523);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
