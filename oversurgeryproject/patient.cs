@@ -116,5 +116,19 @@ namespace oversurgeryproject
             Appointment mm = new Appointment();
             mm.Show();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Prescription mm = new Prescription();
+            mm.Show();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Test mm = new Test();
+            mm.Show();
+        }
     }
 }

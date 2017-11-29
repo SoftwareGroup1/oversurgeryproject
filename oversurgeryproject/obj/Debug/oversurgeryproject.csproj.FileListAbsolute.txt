@@ -26,3 +26,5 @@ C:\Users\Chad\Documents\GitHub\oversurgeryproject\oversurgeryproject\obj\Debug\o
 C:\Users\Chad\Documents\GitHub\oversurgeryproject\oversurgeryproject\obj\Debug\oversurgeryproject.Staff.resources
 C:\Users\Chad\Documents\GitHub\oversurgeryproject\oversurgeryproject\obj\Debug\oversurgeryproject.csproj.GenerateResource.Cache
 C:\Users\Chad\Documents\GitHub\oversurgeryproject\oversurgeryproject\obj\Debug\oversurgeryproject.Appointment.resources
+C:\Users\Chad\Documents\GitHub\oversurgeryproject\oversurgeryproject\obj\Debug\oversurgeryproject.Prescription.resources
+C:\Users\Chad\Documents\GitHub\oversurgeryproject\oversurgeryproject\obj\Debug\oversurgeryproject.Test.resources
