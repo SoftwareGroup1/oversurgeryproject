@@ -58,6 +58,8 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.patientBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.oversugeryDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -244,7 +246,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button2.Location = new System.Drawing.Point(460, 99);
+            this.button2.Location = new System.Drawing.Point(341, 72);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(113, 56);
             this.button2.TabIndex = 7;
@@ -256,7 +258,7 @@
             // 
             this.button3.AllowDrop = true;
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button3.Location = new System.Drawing.Point(460, 172);
+            this.button3.Location = new System.Drawing.Point(341, 134);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(113, 56);
             this.button3.TabIndex = 9;
@@ -267,7 +269,7 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button4.Location = new System.Drawing.Point(341, 172);
+            this.button4.Location = new System.Drawing.Point(341, 192);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(113, 56);
             this.button4.TabIndex = 8;
@@ -278,7 +280,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.button1.Location = new System.Drawing.Point(341, 99);
+            this.button1.Location = new System.Drawing.Point(341, 10);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(113, 56);
             this.button1.TabIndex = 6;
@@ -297,7 +299,7 @@
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.button5.BackColor = System.Drawing.Color.ForestGreen;
             this.button5.Location = new System.Drawing.Point(633, 8);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(112, 41);
@@ -308,7 +310,7 @@
             // 
             // button6
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.button6.BackColor = System.Drawing.Color.ForestGreen;
             this.button6.Location = new System.Drawing.Point(755, 8);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(112, 41);
@@ -319,13 +321,36 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(618, 99);
+            this.button7.BackColor = System.Drawing.Color.Yellow;
+            this.button7.Location = new System.Drawing.Point(471, 250);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(127, 65);
             this.button7.TabIndex = 19;
             this.button7.Text = "Appointment ";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.Yellow;
+            this.button8.Location = new System.Drawing.Point(604, 250);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(127, 65);
+            this.button8.TabIndex = 20;
+            this.button8.Text = "Prescription ";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.Yellow;
+            this.button9.Location = new System.Drawing.Point(737, 250);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(127, 65);
+            this.button9.TabIndex = 21;
+            this.button9.Text = "Test ";
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // patient
             // 
@@ -333,6 +358,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(879, 562);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -396,5 +423,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
     }
 }
