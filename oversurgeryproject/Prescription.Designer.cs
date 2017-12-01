@@ -60,10 +60,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(606, 54);
+            this.pictureBox1.Location = new System.Drawing.Point(634, 54);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(271, 51);
-            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.Size = new System.Drawing.Size(243, 50);
+            this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
             // 
             // Prescription
