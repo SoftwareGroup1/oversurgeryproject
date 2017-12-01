@@ -84,6 +84,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>OversugeryDBDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="OversugeryDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OversugeryDBDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="patient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +155,17 @@
     </None>
     <None Include="OversugeryDBDataSet.xss">
       <DependentUpon>OversugeryDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OversugeryDBDataSet2.xsc">
+      <DependentUpon>OversugeryDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="OversugeryDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OversugeryDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OversugeryDBDataSet2.xss">
+      <DependentUpon>OversugeryDBDataSet2.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
