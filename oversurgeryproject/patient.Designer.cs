@@ -62,6 +62,8 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.patientBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.oversugeryDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -325,7 +327,7 @@
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.Yellow;
-            this.button7.Location = new System.Drawing.Point(471, 250);
+            this.button7.Location = new System.Drawing.Point(644, 183);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(127, 65);
             this.button7.TabIndex = 19;
@@ -336,7 +338,7 @@
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.Yellow;
-            this.button8.Location = new System.Drawing.Point(604, 250);
+            this.button8.Location = new System.Drawing.Point(724, 254);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(127, 65);
             this.button8.TabIndex = 20;
@@ -347,7 +349,7 @@
             // button9
             // 
             this.button9.BackColor = System.Drawing.Color.Yellow;
-            this.button9.Location = new System.Drawing.Point(737, 250);
+            this.button9.Location = new System.Drawing.Point(591, 254);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(127, 65);
             this.button9.TabIndex = 21;
@@ -364,12 +366,33 @@
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
             // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(0, 0);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(75, 23);
+            this.button10.TabIndex = 23;
+            this.button10.Text = "button10";
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(460, 254);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(110, 32);
+            this.button11.TabIndex = 24;
+            this.button11.Text = "Search ";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
             // patient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(879, 562);
+            this.Controls.Add(this.button11);
+            this.Controls.Add(this.button10);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
@@ -440,5 +463,7 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
     }
 }
