@@ -158,9 +158,11 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(135, 72);
+            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(246, 22);
+            this.textBox1.Size = new System.Drawing.Size(246, 32);
             this.textBox1.TabIndex = 32;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
