@@ -41,27 +41,27 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.appointmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.oversugeryDBDataSet2 = new oversurgeryproject.OversugeryDBDataSet2();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.reasonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.staffNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.timeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.appointmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.oversugeryDBDataSet2 = new oversurgeryproject.OversugeryDBDataSet2();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.appointmentTableAdapter = new oversurgeryproject.OversugeryDBDataSet2TableAdapters.appointmentTableAdapter();
+            this.fullNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.reasonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.staffNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.timeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appointmentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.oversugeryDBDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -176,6 +176,16 @@
             this.textBox1.TabIndex = 32;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // appointmentBindingSource
+            // 
+            this.appointmentBindingSource.DataMember = "appointment";
+            this.appointmentBindingSource.DataSource = this.oversugeryDBDataSet2;
+            // 
+            // oversugeryDBDataSet2
+            // 
+            this.oversugeryDBDataSet2.DataSetName = "OversugeryDBDataSet2";
+            this.oversugeryDBDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // textBox2
             // 
             this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.appointmentBindingSource, "Reason ", true));
@@ -228,46 +238,6 @@
             this.dataGridView2.TabIndex = 38;
             this.dataGridView2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.dataGridView2_KeyPress);
             // 
-            // fullNameDataGridViewTextBoxColumn
-            // 
-            this.fullNameDataGridViewTextBoxColumn.DataPropertyName = "Full Name ";
-            this.fullNameDataGridViewTextBoxColumn.HeaderText = "Full Name ";
-            this.fullNameDataGridViewTextBoxColumn.Name = "fullNameDataGridViewTextBoxColumn";
-            // 
-            // reasonDataGridViewTextBoxColumn
-            // 
-            this.reasonDataGridViewTextBoxColumn.DataPropertyName = "Reason ";
-            this.reasonDataGridViewTextBoxColumn.HeaderText = "Reason ";
-            this.reasonDataGridViewTextBoxColumn.Name = "reasonDataGridViewTextBoxColumn";
-            // 
-            // staffNameDataGridViewTextBoxColumn
-            // 
-            this.staffNameDataGridViewTextBoxColumn.DataPropertyName = "Staff Name ";
-            this.staffNameDataGridViewTextBoxColumn.HeaderText = "Staff Name ";
-            this.staffNameDataGridViewTextBoxColumn.Name = "staffNameDataGridViewTextBoxColumn";
-            // 
-            // dayDataGridViewTextBoxColumn
-            // 
-            this.dayDataGridViewTextBoxColumn.DataPropertyName = "Day";
-            this.dayDataGridViewTextBoxColumn.HeaderText = "Day";
-            this.dayDataGridViewTextBoxColumn.Name = "dayDataGridViewTextBoxColumn";
-            // 
-            // timeDataGridViewTextBoxColumn
-            // 
-            this.timeDataGridViewTextBoxColumn.DataPropertyName = "Time ";
-            this.timeDataGridViewTextBoxColumn.HeaderText = "Time ";
-            this.timeDataGridViewTextBoxColumn.Name = "timeDataGridViewTextBoxColumn";
-            // 
-            // appointmentBindingSource
-            // 
-            this.appointmentBindingSource.DataMember = "appointment";
-            this.appointmentBindingSource.DataSource = this.oversugeryDBDataSet2;
-            // 
-            // oversugeryDBDataSet2
-            // 
-            this.oversugeryDBDataSet2.DataSetName = "OversugeryDBDataSet2";
-            this.oversugeryDBDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -316,6 +286,38 @@
             // 
             this.appointmentTableAdapter.ClearBeforeFill = true;
             // 
+            // fullNameDataGridViewTextBoxColumn
+            // 
+            this.fullNameDataGridViewTextBoxColumn.DataPropertyName = "Full Name ";
+            this.fullNameDataGridViewTextBoxColumn.HeaderText = "Full Name ";
+            this.fullNameDataGridViewTextBoxColumn.Name = "fullNameDataGridViewTextBoxColumn";
+            // 
+            // reasonDataGridViewTextBoxColumn
+            // 
+            this.reasonDataGridViewTextBoxColumn.DataPropertyName = "Reason ";
+            this.reasonDataGridViewTextBoxColumn.FillWeight = 150F;
+            this.reasonDataGridViewTextBoxColumn.HeaderText = "Reason ";
+            this.reasonDataGridViewTextBoxColumn.Name = "reasonDataGridViewTextBoxColumn";
+            this.reasonDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // staffNameDataGridViewTextBoxColumn
+            // 
+            this.staffNameDataGridViewTextBoxColumn.DataPropertyName = "Staff Name ";
+            this.staffNameDataGridViewTextBoxColumn.HeaderText = "Staff Name ";
+            this.staffNameDataGridViewTextBoxColumn.Name = "staffNameDataGridViewTextBoxColumn";
+            // 
+            // dayDataGridViewTextBoxColumn
+            // 
+            this.dayDataGridViewTextBoxColumn.DataPropertyName = "Day";
+            this.dayDataGridViewTextBoxColumn.HeaderText = "Day";
+            this.dayDataGridViewTextBoxColumn.Name = "dayDataGridViewTextBoxColumn";
+            // 
+            // timeDataGridViewTextBoxColumn
+            // 
+            this.timeDataGridViewTextBoxColumn.DataPropertyName = "Time ";
+            this.timeDataGridViewTextBoxColumn.HeaderText = "Time ";
+            this.timeDataGridViewTextBoxColumn.Name = "timeDataGridViewTextBoxColumn";
+            // 
             // Appointment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -346,9 +348,9 @@
             this.Text = "Appointment";
             this.Load += new System.EventHandler(this.Appointment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.appointmentBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.oversugeryDBDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
