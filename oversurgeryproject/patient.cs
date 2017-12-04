@@ -134,11 +134,11 @@ namespace oversurgeryproject
 
         private void button11_Click(object sender, EventArgs e)
         {
-           // string local = textBox2.Text;
-           // SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Chad\Documents\GitHub\oversurgeryproject\oversurgeryproject\OversugeryDB.mdf;Integrated Security=True;Connect Timeout=30");
-           // SqlDataAdapter da = new SqlDataAdapter("select * from patient where Name = '" + local + "'", conn);
-           // DataSet ds = new DataSet();
-           // da.Fill(ds);
+            //string local = textBox2.Text;
+            //SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Chad\Documents\GitHub\oversurgeryproject\oversurgeryproject\OversugeryDB.mdf;Integrated Security=True;Connect Timeout=30");
+            //SqlDataAdapter da = new SqlDataAdapter("select * from patient where Name = '" + local + "'", conn);
+            //DataSet ds = new DataSet();
+            //da.Fill(ds);
             //dataGridView1.DataSource = ds.Tables[0];
         }
     }
